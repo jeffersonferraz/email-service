@@ -21,7 +21,9 @@ module.exports = async (req, res) => {
     from: email,
     to: process.env.EMAIL_USER,
     subject: `New message from ${name}`,
-    text: message
+    text: ` Name: ${name}\n
+            Email: ${email}\n
+            Message: ${message}`
   };
 
   try {
