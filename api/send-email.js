@@ -20,7 +20,7 @@ module.exports = async (req, res) => {
   const mailOptions = {
     from: email,
     to: process.env.EMAIL_USER,
-    subject: `New message from ${name}`,
+    subject: `Portfolio: contact form message (${name})`,
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
   };
 
