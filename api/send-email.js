@@ -26,7 +26,7 @@ module.exports = async (req, res) => {
 
   try {
     await transporter.sendMail(mailOptions);
-    res.redirect(301, "https://jeffersonferraz.github.io/submitted.html");
+    res.redirect(301, "https://jeffersonferraz.github.io/submitted");
   } catch (error) {
     console.error(error);
     res.status(500).send("Failed to send email.");
